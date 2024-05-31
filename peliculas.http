@@ -1,0 +1,65 @@
+GET http://localhost:3000/api/peliculas
+
+###
+
+GET http://localhost:3000/api/peliculas?s=Dun
+
+###
+
+GET http://localhost:3000/api/peliculas/2
+
+###
+
+POST http://localhost:3000/api/peliculas
+Content-Type: application/json
+
+{
+    "titulo": "Los vengadores",
+    "sinopsis": " Cuando un enemigo inesperado surge como una gran amenaza para la seguridad mundial, Nick Fury, director de la Agencia SHIELD, decide reclutar a un equipo para salvar al mundo de un desastre casi ...",
+    "anio": "2012",
+    "poster": "https://http2.mlstatic.com/D_NQ_NP_810279-MLM41571618624_042020-O.webp",
+    "categorias": [1,2,3]
+}
+
+###
+
+POST http://localhost:3000/api/peliculas
+Content-Type: application/json
+
+{
+    "titulo": "Guerra mundial Z",
+    "sinopsis": "Cuando el mundo comienza a ser invadido por una legión de muertos vivientes, Gerry Lane, un experto investigador de las Naciones Unidas, intentará evitar el fin de la civilización en una carrera contra el tiempo y el destino.",
+    "anio": "2013",
+    "poster": "https://m.media-amazon.com/images/I/91F5vt0PGAL._AC_UF894,1000_QL80_.jpg",
+    "categorias": [1,4]
+}
+
+###
+
+POST http://localhost:3000/api/peliculas
+Content-Type: application/json
+
+{
+    "titulo": "Elysium",
+    "sinopsis": "En el año 2159, los seres humanos se dividen en dos grupos: los ricos, que viven en la estación espacial Elysium, y todos los demás, que sobreviven como pueden en una Tierra devastada y superpoblada. ...",
+    "anio": "2013",
+    "poster": "https://m.media-amazon.com/images/I/918zXXTsajL._AC_UF894,1000_QL80_.jpg",
+    "categorias": [1,4,6]
+}
+
+###
+
+POST http://localhost:3000/api/peliculas
+Content-Type: application/json
+
+{
+    "titulo": "El amanecer de los muertos",
+    "sinopsis": "Un grupo de supervivientes debe cruzar el país para llegar a un refugio en San Francisco, mientras son perseguidos por hordas de zombies.",
+    "anio": "2004",
+    "poster": "https://pics.filmaffinity.com/Amanecer_de_los_muertos-401949088-large.jpg",
+    "categorias": [1,4,12]
+}
+
+###
+
+DELETE http://localhost:3000/api/peliculas/18
